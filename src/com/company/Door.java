@@ -12,15 +12,14 @@ package com.company;
 
 public class Door extends Rectangle{
 
-    String material;
-    String color;
-    String lockType;
-    boolean hasWindow;
+    final String material;
+    final String color;
+    final String lockType;
+    final boolean hasWindow;
 
-    public Door() {
-    }
 
-    public Door(double height, double width, String material, String color, String lockType, boolean hasWindow) {
+    public Door(double height, double width, String material, String color,
+                String lockType, boolean hasWindow) {
         super(height, width);
         this.material = material;
         this.color = color;
@@ -32,33 +31,20 @@ public class Door extends Rectangle{
         return material;
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
-    }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
 
     public String getLockType() {
         return lockType;
-    }
-
-    public void setLockType(String lockType) {
-        this.lockType = lockType;
     }
 
     public boolean isHasWindow() {
         return hasWindow;
     }
 
-    public void setHasWindow(boolean hasWindow) {
-        this.hasWindow = hasWindow;
-    }
 
     public Double getPrice(){
         double price = 0;
